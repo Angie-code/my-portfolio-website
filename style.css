@@ -44,3 +44,12 @@ header a:hover::after {
     transform: scale(1);
     transform-origin: left;
 }
+
+.float-message{
+    color: yellowgreen;
+    padding: 20px;
+    font-size: 50px;
+    font-family: "Salsa", cursive;
+    margin: 20px;
+    border-style: none;
+}
