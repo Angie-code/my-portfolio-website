@@ -1,11 +1,18 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Salsa&display=swap");
+
+*,
+*::before,
+*::after {
     margin: 0;
-    background-color: #001818;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    background-color: #222022;
+    width: 100%;
 }
+
 header nav{
-   font-size: 50px;
+   font-size: 25px;
    font-family: "Salsa", cursive;
    text-transform: capitalize;
    overflow: hidden;
@@ -30,8 +37,6 @@ header a{
 header a:hover{
     color: #296560;
     transition: all 300ms linear;
-    transform: scale(1);
-    transform-origin: left;
 }
 
 header a::after{
@@ -40,16 +45,33 @@ header a::after{
     bottom: 0;
     transform: scale(0);
 }
-header a:hover::after {
-    transform: scale(1);
-    transform-origin: left;
-}
 
 .float-message{
     color: yellowgreen;
-    padding: 20px;
-    font-size: 50px;
+    padding: 10px;
+    font-size: 25px;
     font-family: "Salsa", cursive;
-    margin: 20px;
+    margin: 5px;
     border-style: none;
 }
+.img--container {
+    border: 2.5px solid #87fff3;
+    height: 350px;
+    width: 250px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-left: 50rem;
+
+}
+.img--container > img {
+    object-position: left;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #e50bd3;
+    
+  }
